@@ -1,4 +1,4 @@
-
+use std::collections::HashMap;
 
 #[derive(Debug)]
 struct Noun {
@@ -96,14 +96,28 @@ impl PartOfSpeech for Interjection {
 
 fn main() {
 
-    let noun = Noun {
-        name: "ciao".to_string()
-    };
+    let nouns = vec!([
+        Noun { name: "bikini".to_string() },
+        Noun { name: "locker room".to_string() },
+        Noun { name: "towel".to_string() },
+        Noun { name: "life preserver".to_string() },
+        Noun { name: "beach ball".to_string() },
+        Noun { name: "suntan lotion".to_string() },
+        Noun { name: "sunglasses".to_string() },
+        Noun { name: "pool".to_string() },
+        Noun { name: "flippers".to_string() },
+        Noun { name: "umbrella".to_string() },
+        Noun { name: "bathing suit".to_string() },
+        Noun { name: "lifegurd chair".to_string() },
+        Noun { name: "mexican hat".to_string() },
+        Noun { name: "air mattress".to_string() },
+        Noun { name: "diving board".to_string() },
+        Noun { name: "whistle".to_string() },
+        Noun { name: "pool ladder".to_string() },
+        Noun { name: "hamburger".to_string() },
+        Noun { name: "hot dog".to_string() },
+        Noun { name: "goggles".to_string() },
+    ]);
 
-    let noun = Adjective {
-        name: "ciao".to_string()
-    };
-
-
-    println!("{:?}", noun);
+    println!("{:?}", nouns);
 }
